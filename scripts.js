@@ -49,7 +49,7 @@ map.on('load', () => {
 map.on('click', 'trails-layer', (e) => {
   const coordinates = e.lngLat;
     let feature = e.features[0].properties
-  const description = "<b>Trail Name:</b>" + feature.TRLNAME + "<br><b>Trail Class:</b>" + feature.TRLCLASS + "<br><b>Trail Length:</b>" + feature.Miles.toFixed(2) +" Miles";
+  const description = "<b>Trail Name: </b>" + feature.TRLNAME + "<br><b>Trail Class: </b>" + feature.TRLCLASS + "<br><b>Trail Length: </b>" + feature.Miles.toFixed(2) +" Miles";
 
   new mapboxgl.Popup()
     .setLngLat(coordinates)
