@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <h2>Boundaries and Trails of Big Bend National Park in 3d Space</h2>
+  <p>This map offers information on the locations and conditions of trails within the Big Bend National Park, as well as their orientation in 3d space. Scroll over any trail and click on it to learn more about that trail in particular, or click and drag on the button in the top right with two arrows to angle your view of the map and see a slightly exaggerated picture of the topography - the vertical texture - of the land.</p>
+  <div id="map"></div>
+  <div id="legend">
+    <h4>Big Bend NP Trails</h4>
+        <ul>
+            <li><hr class="class1"> Class 1 trail: Minimally Developed</li>
+            <li><hr class="class2"> Class 2 trail: Moderately Developed</li>
+            <li><hr class="class3"> Class 3 trail: Developed</li>
+            <li><hr class="boundary"> Park boundary</li>
+        </ul>
+  </div>
+  <h3>Data Sources</h3>
+  <p><a href="https://hub.arcgis.com/datasets/philip::big-bend-national-park-boundary/explore?location=29.588616%2C-103.580075%2C9.00" target="_null">Park Boundaries</a> provided by 'philip'</p>
+  <p><a href="https://hub.arcgis.com/datasets/nps::big-bend-national-park-trails/explore?location=29.301896%2C-103.316961%2C10.00" target="_null">Trail Data</a> provided by National Park Service</p>
+  <script src='scripts.js'></script>
+</body>
+</html>
