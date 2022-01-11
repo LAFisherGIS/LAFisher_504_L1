@@ -72,7 +72,7 @@ map.on('load', function () {
        'tileSize': 512,
        'maxzoom': 14
    });
-    map.setTerrain({"source": "mapbox-dem", "exaggeration": 1.4});
+    map.setTerrain({"source": "mapbox-dem", "exaggeration": 1.3});
 
     map.addLayer({
         'id': 'sky',
@@ -91,6 +91,7 @@ const navControl = new mapboxgl.NavigationControl({
 map.addControl(navControl, 'top-right');
 
 const scaleControl = new mapboxgl.ScaleControl({
-    visualizePitch: true
+    visualizePitch: true,
+    unit: 'imperial'
 });
 map.addControl(scaleControl, 'bottom-left');
