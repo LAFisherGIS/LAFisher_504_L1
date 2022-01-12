@@ -1,11 +1,12 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibGFmaXNoZXJnaXMiLCJhIjoiY2t5MHp1NHNoMDY3dDJ3cGRtNXdraDFiaSJ9.GS7A10SiyfuUiKee_X5N_A'
+
 const map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/mapbox/satellite-v9', // style URL
-center: [-103.2502, 29.2498], // starting position [lng, lat]
-zoom: 9, // starting zoom
-pitch: 0,
-bearing: 0,
+  container: 'map', // container ID
+  style: 'mapbox://styles/mapbox/satellite-v9', // style URL
+  center: [-103.2502, 29.2498], // starting position [lng, lat]
+  zoom: 9, // starting zoom
+  pitch: 0,
+  bearing: 0,
 });
 
 map.on('load', () => {
